@@ -1,0 +1,79 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(39, 39, 39);
+}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+#main-content{
+    height: 100vh;
+    padding: 1.5em 0;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-content.full-bg{
+    background-image: url('../images/logo-big.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+.logo-container{
+    width: 25%;
+}
+
+.logo-container img{
+    width: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 0.8em;
+}
+
+.title .enhance{
+    font-weight: bold;
+    color:#000;
+    font-size: 1.21em;
+    margin: 0;
+}
+
+.coming{
+    padding: 0.3em 0.6em;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    color: #fff;
+    background: rgb(199, 33, 15);
+}
+
+.coming p{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 1024px){
+    .logo-container{
+        width: 50%;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    .coming{
+        font-size: 1.4em;
+    }
+}
